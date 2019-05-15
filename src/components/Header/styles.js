@@ -3,6 +3,7 @@ import { metrics, colors } from '~/styles';
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: colors.white,
     height: 54,
     borderBottomWidth: 1,
     borderBottomColor: colors.light,
