@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import Header from '~/components/Header';
 
-// import { Container } from './styles';
+import styles from './styles';
 
 const Welcome = () => (
   <View>
-    <Text>Welcome</Text>
+    <Header title="GitIssues" />
   </View>
 );
 

@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import Header from '~/components/Header';
 
-// import { Container } from './styles';
+import styles from './styles';
 
 const Issues = () => (
   <View>
-    <Text>Issues</Text>
+    <Header title="RocketNative" />
   </View>
 );
 
