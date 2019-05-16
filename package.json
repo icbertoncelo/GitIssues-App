@@ -8,6 +8,8 @@
     "react-devtools": "react-devtools"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.4.0",
+    "axios": "^0.18.0",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
     "react-native": "0.59.8",

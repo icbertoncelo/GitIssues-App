@@ -4,7 +4,12 @@ import { metrics, colors } from '~/styles';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.light,
+    backgroundColor: colors.lighter,
+  },
+  error: {
+    color: colors.danger,
+    textAlign: 'center',
+    marginTop: metrics.baseMargin,
   },
   loading: {
     marginTop: metrics.baseMargin,
@@ -14,6 +19,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: metrics.basePadding,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.light,
   },
   input: {
     backgroundColor: colors.white,
@@ -24,6 +31,11 @@ const styles = StyleSheet.create({
   },
   icon: {
     color: colors.darker,
+  },
+  empty: {
+    color: colors.dark,
+    marginTop: metrics.baseMargin * 2,
+    textAlign: 'center',
   },
 });
 
