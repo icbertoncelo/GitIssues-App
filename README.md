@@ -2,7 +2,7 @@
 
 ## Challenge 2
 
-The app allow the user insert a Github repository name an it will be showed at a list in the screen. Moreover, when the user select the repository, he will be able to see the issues list in an another page and filter like opened, closed or all.
+The app allow the user insert a Github repository name an it will be showed at a list in the screen. Moreover, when the user select the repository, he will be able to see the issues list in an another page and filter like opened, closed or all (the last one feature was not implemented)
 
 ## Available Scripts
 
