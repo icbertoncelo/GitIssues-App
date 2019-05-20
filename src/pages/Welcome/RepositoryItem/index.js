@@ -5,13 +5,19 @@ import {
   View, Image, Text, TouchableOpacity,
 } from 'react-native';
 
+import { withNavigation } from 'react-navigation';
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './styles';
 
-const RepositoryItem = ({ repository }) => (
+const RepositoryItem = ({ repository, navigation }) => (
   <TouchableOpacity
     style={styles.container}
-    onPress={() => {}}
+    onPress={() => navigation.navigate('Issues', {
+      title: repository.name,
+      full_name: repository.full_name,
+    })
+    }
   >
     <Image
       style={styles.avatar}
@@ -37,6 +43,9 @@ RepositoryItem.propTypes = {
     }),
     name: PropTypes.string,
   }).isRequired,
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
 };
 
-export default RepositoryItem;
+export default withNavigation(RepositoryItem);

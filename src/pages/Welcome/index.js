@@ -90,7 +90,7 @@ class Welcome extends Component {
     const { repositories, refreshing } = this.state;
 
     return !repositories.length ? (
-      <Text style={styles.empty}>Nenhum repositório adicionado</Text>
+      <Text style={styles.empty}>No repositories added</Text>
     ) : (
       <FlatList
         data={repositories}
@@ -110,7 +110,10 @@ class Welcome extends Component {
 
     return (
       <View style={styles.container}>
-        <Header title="GitIssues" />
+        <Header
+          title="GitIssues"
+          back={false}
+        />
         {!!error && <Text style={styles.error}>{error}</Text>}
         <View style={styles.form}>
           <TextInput
